@@ -1,0 +1,52 @@
+<!-- templates/student_details.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Details</title>
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f'); /* Same image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.4); /* White transparent */
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 450px;
+            color: black; /* Black text */
+        }
+        h2 {
+            font-weight: bold;
+            color: black;
+        }
+        p {
+            font-size: 18px;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+<div class="glass-card text-center">
+    <h2>Welcome, {{ student.name }}</h2>
+    <p><strong>Email:</strong> {{ student.email }}</p>
+    <p><strong>Marks:</strong> {{ student.marks }}</p>
+</div>
+
+<!-- Bootstrap JS Bundle (optional) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
