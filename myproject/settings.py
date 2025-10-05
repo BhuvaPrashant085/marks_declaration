@@ -38,7 +38,7 @@ SECRET_KEY = 'django-insecure-9zh1n^4c21p6m6@-*vmiuyl_3-2i6*j$^hu7b3wzrfe47bv_ys
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-ALLOWED_HOSTS = ['localhost', '127.0.0.1','prashantbhuva.pythonanywhere.com','marks_declaration.onrender.com', 'localhost']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1','prashantbhuva.pythonanywhere.com','marks-declaration-1.onrender.com', 'localhost']
 
 
 
